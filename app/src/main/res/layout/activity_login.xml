@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/theme">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/user_image"
+       android:layout_width="166dp"
+       android:layout_height="166dp"
+       android:layout_centerHorizontal="true"
+       android:elevation="15dp"
+       android:layout_marginTop="145dp"
+       android:layout_marginBottom="20dp"
+       android:src="@drawable/logo"
+       tools:ignore="MissingClass" />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:layout_below="@id/user_image"
+       android:layout_margin="25dp"
+       android:id="@+id/login_empid"
+       android:hint="Employee Id"
+       android:background="@drawable/edback"
+       android:textAlignment="center"
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal" />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:layout_below="@id/login_empid"
+       android:layout_margin="25dp"
+       android:id="@+id/login_emppass"
+       android:hint="Password"
+       android:background="@drawable/edback"
+       android:textAlignment="center"
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal" />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/login_button"
+       android:text="Login"
+       android:layout_below="@id/login_emppass"
+       android:layout_margin="25dp"/>
+
+
+   <TextView
+       android:layout_width="116dp"
+       android:layout_height="15dp"
+       android:layout_below="@id/login_button"
+       android:text="Forgot Password?"
+       android:layout_centerHorizontal="true"
+       android:textColor="@color/white"/>
+
+</RelativeLayout>
