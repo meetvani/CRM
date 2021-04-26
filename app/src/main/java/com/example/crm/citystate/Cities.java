@@ -1,4 +1,4 @@
-package com.example.crm;
+package com.example.crm.citystate;
 
 import lombok.Data;
 
