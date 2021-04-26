@@ -8,6 +8,10 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.crm.citystate.Cities;
+import com.example.crm.citystate.Rinterface;
+import com.example.crm.citystate.object;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
