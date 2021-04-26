@@ -8,7 +8,12 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.crm.citystate.Cities;
+import com.example.crm.citystate.Rinterface;
+import com.example.crm.citystate.object;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -20,9 +25,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class CustomerRegisteration extends AppCompatActivity {
 
-    Spinner stateSpin, citySpin;
+    Spinner stateSpin, citySpin, domainSpin, subDomainSpin,taskSpin,genderSpin;
     List<String> stateList = new ArrayList<>();
     List<String> cityList = new ArrayList<>();
+    String cit[];
+    String[] adword;
+    String[] lead_management;
+    String[] selected_subDomain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +40,35 @@ public class CustomerRegisteration extends AppCompatActivity {
 
         stateSpin = findViewById(R.id.state);
         citySpin = findViewById(R.id.city);
+        domainSpin = findViewById(R.id.domain);
+        subDomainSpin = findViewById(R.id.sub_domain);
+        taskSpin=findViewById(R.id.tasks);
+        genderSpin=findViewById(R.id.gender);
+
+        String[] domain = {"Choose Domain", "COMPLETE IT SOLUTION", "ADWORD", "LEAD MANAGEMENT"};
+        cit = new String[]{"Choose Sub Domain", "Domain", "Hosting", "Static Web Development", "Dynamic Web Development", "Web Portals", "E-Commerce Solution", "Graphic Design", "App Solution Android/IOS/Windows", "SEO", "SMO"};
+        adword = new String[]{"Choose Sub Domain", "Television", "Airline/Airport", "Cinema", "Digital", "Magazine", "Newspaper", "Outdoor", "Radio", "Non-Traditional"};
+        lead_management = new String[]{"Choose Sub Domain", "Interactive Voice Response (IVR)", "Toll Free Service", "Missed Call Service", "Bulk SMS", "Bulk Emails", "Call Conferencing", "Bulk Voice Call", "Call Center Solution", "Whatsapp Marketing"};
+
+        domainSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, domain));
+        domainSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selected_subDomain = new String[]{"Select SubDomain"};
+                if (position == 1)
+                    selected_subDomain = cit;
+                if (position == 2)
+                    selected_subDomain = adword;
+                if (position == 3)
+                    selected_subDomain = lead_management;
+                subDomainSpin.setAdapter(new ArrayAdapter<>(CustomerRegisteration.this, android.R.layout.simple_spinner_dropdown_item, selected_subDomain));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://raw.githubusercontent.com/fayazara/Indian-Cities-API/master/")
@@ -52,7 +90,7 @@ public class CustomerRegisteration extends AppCompatActivity {
                 }
                 List<String> filteredStateList = removeDuplicates(stateList);
                 Collections.sort(filteredStateList);
-                filteredStateList.add(0,"Select State");
+                filteredStateList.add(0, "Select State");
                 stateSpin.setAdapter(new ArrayAdapter<>(CustomerRegisteration.this, android.R.layout.simple_spinner_dropdown_item, filteredStateList));
                 stateSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
@@ -66,7 +104,7 @@ public class CustomerRegisteration extends AppCompatActivity {
                         }
                         List<String> filteredCityList = removeDuplicates(cityList);
                         Collections.sort(filteredCityList);
-                        filteredCityList.add(0,"Select City");
+                        filteredCityList.add(0, "Select City");
                         citySpin.setAdapter(new ArrayAdapter<>(CustomerRegisteration.this, android.R.layout.simple_spinner_dropdown_item, filteredCityList));
 
                     }
@@ -83,6 +121,9 @@ public class CustomerRegisteration extends AppCompatActivity {
                 System.out.println("t.getMessage() = " + t.getMessage());
             }
         });
+        List<String> tasks= Arrays.asList(getResources().getStringArray(R.array.tasks));
+        taskSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,tasks));
+        genderSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,new String[]{"Male","Female","Other"}));
     }
 
     private List<String> removeDuplicates(List<String> stateList) {
