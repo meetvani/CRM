@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class Cities {
-    String District;
+    String City;
     String State;
 }
