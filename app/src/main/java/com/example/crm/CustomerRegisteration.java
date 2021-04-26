@@ -1,9 +1,11 @@
 package com.example.crm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,7 +46,10 @@ public class CustomerRegisteration extends AppCompatActivity {
         subDomainSpin = findViewById(R.id.sub_domain);
         taskSpin=findViewById(R.id.tasks);
         genderSpin=findViewById(R.id.gender);
-
+Button button=findViewById(R.id.cust_reg);
+button.setOnClickListener(view -> {
+    startActivity(new Intent(CustomerRegisteration.this,EmployeeRegistration.class));
+});
         String[] domain = {"Choose Domain", "COMPLETE IT SOLUTION", "ADWORD", "LEAD MANAGEMENT"};
         cit = new String[]{"Choose Sub Domain", "Domain", "Hosting", "Static Web Development", "Dynamic Web Development", "Web Portals", "E-Commerce Solution", "Graphic Design", "App Solution Android/IOS/Windows", "SEO", "SMO"};
         adword = new String[]{"Choose Sub Domain", "Television", "Airline/Airport", "Cinema", "Digital", "Magazine", "Newspaper", "Outdoor", "Radio", "Non-Traditional"};
