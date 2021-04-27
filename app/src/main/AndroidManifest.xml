@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".PaySlipSecondActivity"></activity>
+        <activity android:name=".PaySlipFormActivity" />
+        <activity android:name=".CandidateRemark" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CandidateRegistration">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

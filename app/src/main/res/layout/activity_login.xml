@@ -29,6 +29,7 @@
        android:textAlignment="center"
        android:gravity="center_horizontal"
        android:layout_gravity="center_horizontal" />
+
    <EditText
        android:layout_width="match_parent"
        android:layout_height="35dp"
@@ -40,6 +41,7 @@
        android:textAlignment="center"
        android:gravity="center_horizontal"
        android:layout_gravity="center_horizontal" />
+
    <Button
        android:layout_width="match_parent"
        android:layout_height="wrap_content"

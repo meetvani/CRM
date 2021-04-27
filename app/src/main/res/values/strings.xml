@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">CRM</string>
+    <string-array name="Spinner_items_city">
+        <item>Indore</item>
+        <item>Bombay</item>
+        <item>Kolkata</item>
+        <item>Banglore</item>
+        <item>Pune</item>
+
+    </string-array>
+
+    <string-array name="Spinner_items_state">
+        <item>Madhya Pradesh</item>
+        <item>Uttar Pradesh</item>
+        <item>Delhi</item>
+        <item>Himachal</item>
+        <item>West Bangal</item>
+
+    </string-array>
 </resources>

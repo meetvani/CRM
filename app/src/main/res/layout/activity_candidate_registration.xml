@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CandidateRegistration"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_name"
+            android:hint="Candidate Name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_phone"
+            android:layout_below="@+id/candidate_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Candidate Phone"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_alt_phone"
+            android:layout_below="@+id/candidate_phone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Alternate Phone"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_personal_email"
+            android:layout_below="@+id/candidate_alt_phone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Personal Email Id"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_official_email"
+            android:layout_below="@+id/candidate_personal_email"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Official Email Id"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_source"
+            android:layout_below="@+id/candidate_official_email"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Source"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/candidate_address"
+            android:layout_below="@+id/candidate_source"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Address"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_city"
+            android:layout_below="@+id/candidate_address"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Select city"
+            android:entries="@array/Spinner_items_city"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_state"
+            android:layout_below="@+id/candidate_city"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Select city"
+            android:entries="@array/Spinner_items_state"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_resume"
+            android:layout_below="@+id/candidate_state"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_200"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
