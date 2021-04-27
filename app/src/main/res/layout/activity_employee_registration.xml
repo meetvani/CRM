@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ayushBlue"
+    tools:context=".EmployeeRegistration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/empregname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:gravity="center"
+            android:hint="Employee Name" />
+
+        <Spinner
+            android:id="@+id/empcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empregname"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/empdept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empcategory"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/empdesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empdept"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:gravity="center"
+            android:hint="Designation" />
+
+        <EditText
+            android:id="@+id/empphoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empdesignation"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:gravity="center"
+            android:hint="Phone No." />
+
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empphoneno"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/empofficialid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:gravity="center"
+            android:hint="Official ID" />
+
+        <EditText
+            android:id="@+id/emppersonalid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empofficialid"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:gravity="center"
+            android:hint="Personal ID" />
+
+        <EditText
+            android:id="@+id/emppassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emppersonalid"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:gravity="center"
+            android:hint="Password" />
+
+        <Spinner
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emppassword"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_margin="25dp"
+            android:text="Register" />
+    </RelativeLayout>
+</ScrollView>

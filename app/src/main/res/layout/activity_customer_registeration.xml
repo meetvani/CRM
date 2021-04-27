@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ayushBlue"
+    android:orientation="vertical"
+    tools:context=".CustomerRegisteration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Customer Registration"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg" />
+
+        <Spinner
+            android:id="@+id/sub_domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg" />
+
+        <Spinner
+            android:id="@+id/tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg"
+            android:entries="@array/tasks" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Package Name"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Package Value"
+            android:inputType="number" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Source"
+            android:inputType="text" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Personal Mail ID"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Official Email ID"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg" />
+
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg" />
+
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg" />
+
+        <EditText
+            android:importantForAutofill="no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/edback"
+            android:hint="Address"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/cust_reg"
+            android:background="@drawable/edback"
+            android:text="Register"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black" />
+    </LinearLayout>
+</ScrollView>

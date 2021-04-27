@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:background="#063A6A">
+    android:background="@color/ayushBlue">
 
    <de.hdodenhof.circleimageview.CircleImageView
        android:id="@+id/user_image"
@@ -53,7 +53,7 @@
 
    <TextView
        android:layout_width="116dp"
-       android:layout_height="15dp"
+       android:layout_height="wrap_content"
        android:layout_below="@id/login_button"
        android:text="Forgot Password?"
        android:layout_centerHorizontal="true"
