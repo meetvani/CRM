@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/empregname"
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-            android:gravity="center"
+
             android:hint="Employee Name" />
 
         <Spinner
@@ -25,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/empregname"
             android:layout_margin="20dp"
-            android:background="@color/white" />
+            android:background="@drawable/spinnerbg" />
 
         <Spinner
             android:id="@+id/empdept"
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/empcategory"
             android:layout_margin="20dp"
-            android:background="@color/white" />
+            android:background="@drawable/spinnerbg" />
 
         <EditText
             android:id="@+id/empdesignation"
@@ -42,7 +43,7 @@
             android:layout_below="@id/empdept"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-            android:gravity="center"
+
             android:hint="Designation" />
 
         <EditText
@@ -52,7 +53,7 @@
             android:layout_below="@id/empdesignation"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-            android:gravity="center"
+
             android:hint="Phone No." />
 
         <Spinner
@@ -61,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/empphoneno"
             android:layout_margin="20dp"
-            android:background="@color/white" />
+            android:background="@drawable/spinnerbg" />
 
         <Spinner
             android:id="@+id/city"
@@ -69,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/state"
             android:layout_margin="20dp"
-            android:background="@color/white" />
+            android:background="@drawable/spinnerbg" />
 
         <EditText
             android:id="@+id/empofficialid"
@@ -78,7 +79,7 @@
             android:layout_below="@id/city"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-            android:gravity="center"
+
             android:hint="Official ID" />
 
         <EditText
@@ -88,7 +89,7 @@
             android:layout_below="@id/empofficialid"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-            android:gravity="center"
+
             android:hint="Personal ID" />
 
         <EditText
@@ -98,7 +99,7 @@
             android:layout_below="@id/emppersonalid"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-            android:gravity="center"
+
             android:hint="Password" />
 
         <Spinner
@@ -107,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/emppassword"
             android:layout_margin="20dp"
-            android:background="@color/white" />
+            android:background="@drawable/spinnerbg" />
 
         <Spinner
             android:id="@+id/gender"
@@ -115,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/status"
             android:layout_margin="20dp"
-            android:background="@color/white" />
+            android:background="@drawable/spinnerbg" />
 
         <Button
             android:id="@+id/register"
@@ -123,6 +124,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/gender"
             android:layout_margin="25dp"
-            android:text="Register" />
+            android:background="@drawable/edback"
+            android:text="Register"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black" />
     </RelativeLayout>
 </ScrollView>

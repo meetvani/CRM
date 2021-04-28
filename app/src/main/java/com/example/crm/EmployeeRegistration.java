@@ -1,9 +1,11 @@
 package com.example.crm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +32,7 @@ public class EmployeeRegistration extends AppCompatActivity {
     List<String> departmentList = new ArrayList<>();
     List<String> genderList = new ArrayList<>();
     List<String> statusList = new ArrayList<>();
+    Button register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,10 @@ public class EmployeeRegistration extends AppCompatActivity {
         departmentspin = findViewById(R.id.empdept);
         genderspin = findViewById(R.id.gender);
         statusspin = findViewById(R.id.status);
+        register=findViewById(R.id.register);
+
+        register.setOnClickListener(v -> startActivity(new Intent(EmployeeRegistration.this,UpdateCustomerRemark.class)));
+
         categoryList.add("Internship");
         categoryList.add(0, "Select Category");
         categoryList.add("Job");

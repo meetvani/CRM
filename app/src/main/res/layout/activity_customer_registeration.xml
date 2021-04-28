@@ -14,22 +14,22 @@
         android:orientation="vertical">
 
         <TextView
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="Customer Registration"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
             android:hint="Name"
+            android:importantForAutofill="no"
             android:inputType="textPersonName" />
 
         <Spinner
@@ -71,39 +71,39 @@
             android:inputType="number" />
 
         <EditText
-            android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
             android:hint="Source"
+            android:importantForAutofill="no"
             android:inputType="text" />
 
         <EditText
-            android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
             android:hint="Personal Mail ID"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
             android:hint="Official Email ID"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
             android:hint="Phone Number"
+            android:importantForAutofill="no"
             android:inputType="phone" />
 
         <Spinner
@@ -128,19 +128,19 @@
             android:background="@drawable/spinnerbg" />
 
         <EditText
-            android:importantForAutofill="no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
             android:hint="Address"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine" />
 
         <Button
+            android:id="@+id/cust_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:id="@+id/cust_reg"
             android:background="@drawable/edback"
             android:text="Register"
             android:textColor="@color/white"
