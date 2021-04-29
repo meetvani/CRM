@@ -27,10 +27,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class CustomerRegisteration extends AppCompatActivity {
 
-    Spinner stateSpin, citySpin, domainSpin, subDomainSpin,taskSpin,genderSpin;
+    Spinner stateSpin, citySpin, domainSpin, subDomainSpin, taskSpin, genderSpin;
     List<String> stateList = new ArrayList<>();
     List<String> cityList = new ArrayList<>();
-    String cit[];
+    String[] cit;
     String[] adword;
     String[] lead_management;
     String[] selected_subDomain;
@@ -44,12 +44,12 @@ public class CustomerRegisteration extends AppCompatActivity {
         citySpin = findViewById(R.id.city);
         domainSpin = findViewById(R.id.domain);
         subDomainSpin = findViewById(R.id.sub_domain);
-        taskSpin=findViewById(R.id.tasks);
-        genderSpin=findViewById(R.id.gender);
-Button button=findViewById(R.id.cust_reg);
-button.setOnClickListener(view -> {
-    startActivity(new Intent(CustomerRegisteration.this,EmployeeRegistration.class));
-});
+        taskSpin = findViewById(R.id.tasks);
+        genderSpin = findViewById(R.id.gender);
+        Button button = findViewById(R.id.cust_reg);
+        button.setOnClickListener(view -> {
+            startActivity(new Intent(CustomerRegisteration.this, EmployeeRegistration.class));
+        });
         String[] domain = {"Choose Domain", "COMPLETE IT SOLUTION", "ADWORD", "LEAD MANAGEMENT"};
         cit = new String[]{"Choose Sub Domain", "Domain", "Hosting", "Static Web Development", "Dynamic Web Development", "Web Portals", "E-Commerce Solution", "Graphic Design", "App Solution Android/IOS/Windows", "SEO", "SMO"};
         adword = new String[]{"Choose Sub Domain", "Television", "Airline/Airport", "Cinema", "Digital", "Magazine", "Newspaper", "Outdoor", "Radio", "Non-Traditional"};
@@ -126,9 +126,10 @@ button.setOnClickListener(view -> {
                 System.out.println("t.getMessage() = " + t.getMessage());
             }
         });
-        List<String> tasks= Arrays.asList(getResources().getStringArray(R.array.tasks));
-        taskSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,tasks));
-        genderSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,new String[]{"Male","Female","Other"}));
+        List<String> tasks = Arrays.asList(getResources().getStringArray(R.array.tasks));
+        taskSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, tasks));
+        genderSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, new String[]{"Male", "Female", "Other"}));
+
     }
 
     private List<String> removeDuplicates(List<String> stateList) {
