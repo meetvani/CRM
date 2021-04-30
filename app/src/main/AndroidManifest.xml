@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".CreateEstimate"></activity>
+        <activity android:name=".InvoiceCreation"></activity>
+        <activity android:name=".CreateEstimate" />
         <activity android:name=".EmployeeRegistration" />
-        <activity android:name=".CustomerDetails"></activity>
+        <activity android:name=".CustomerDetails" />
         <activity android:name=".UpdateCustomerRemark" />
         <activity android:name=".EmployeeRegistration" />
         <activity android:name=".CustomerRegisteration" />
