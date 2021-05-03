@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">CRM</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
     <array name="tasks">
 <item>Choose Task</item>
 <item>Follow Up On Call</item>
