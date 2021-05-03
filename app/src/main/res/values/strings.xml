@@ -1,16 +1,18 @@
 <resources>
     <string name="app_name">CRM</string>
     <array name="tasks">
-<item>Choose Task</item>
-<item>Follow Up On Call</item>
-<item>Meeting Scheduled</item>
-<item>Proposal Done</item>
-<item>Send Invoice</item>
-<item>Payment Follow Up</item>
-<item>Switch Off</item>
-<item>NPC</item>
-<item>Wrong Number</item>
-<item>Call Discounted</item>
-<item>Demo</item>
+        <item>Choose Task</item>
+        <item>Follow Up On Call</item>
+        <item>Meeting Scheduled</item>
+        <item>Proposal Done</item>
+        <item>Send Invoice</item>
+        <item>Payment Follow Up</item>
+        <item>Switch Off</item>
+        <item>NPC</item>
+        <item>Wrong Number</item>
+        <item>Call Discounted</item>
+        <item>Demo</item>
     </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -129,6 +129,7 @@ public class CustomerRegisteration extends AppCompatActivity {
         List<String> tasks = Arrays.asList(getResources().getStringArray(R.array.tasks));
         taskSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, tasks));
         genderSpin.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, new String[]{"Male", "Female", "Other"}));
+
     }
 
     private List<String> removeDuplicates(List<String> stateList) {

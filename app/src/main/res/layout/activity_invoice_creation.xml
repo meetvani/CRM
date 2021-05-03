@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ayushBlue"
-    tools:context=".EmployeeRegistration">
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/custumername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/spinnerbg"
+            android:gravity="center" />
 
         <EditText
-            android:id="@+id/empregname"
+            android:id="@+id/custumeraddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/custumername"
             android:layout_margin="20dp"
-            android:background="@drawable/edback"
+            android:hint="Street"
+            android:background="@drawable/edback" />
 
-            android:hint="Employee Name" />
-
-        <Spinner
-            android:id="@+id/empcategory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/empregname"
-            android:layout_margin="20dp"
-            android:background="@drawable/spinnerbg" />
-
-        <Spinner
+        <EditText
             android:id="@+id/empdept"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/empcategory"
+            android:layout_below="@id/custumeraddress"
             android:layout_margin="20dp"
-            android:background="@drawable/spinnerbg" />
+            android:hint="City"
+            android:background="@drawable/edback" />
 
         <EditText
             android:id="@+id/empdesignation"
@@ -43,8 +43,8 @@
             android:layout_below="@id/empdept"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-
-            android:hint="Designation" />
+            android:gravity="center"
+            android:hint="State" />
 
         <EditText
             android:id="@+id/empphoneno"
@@ -53,24 +53,25 @@
             android:layout_below="@id/empdesignation"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-
-            android:hint="Phone No." />
+            android:gravity="center"
+            android:hint="Zip Code" />
 
         <Spinner
-            android:id="@+id/state"
+            android:id="@+id/country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/empphoneno"
             android:layout_margin="20dp"
             android:background="@drawable/spinnerbg" />
 
-        <Spinner
+        <EditText
             android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/state"
+            android:layout_below="@id/country"
             android:layout_margin="20dp"
-            android:background="@drawable/spinnerbg" />
+            android:hint="Estimate Number"
+            android:background="@drawable/edback" />
 
         <EditText
             android:id="@+id/empofficialid"
@@ -79,8 +80,8 @@
             android:layout_below="@id/city"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-
-            android:hint="Official ID" />
+            android:gravity="center"
+            android:hint="Refrence" />
 
         <EditText
             android:id="@+id/emppersonalid"
@@ -89,7 +90,7 @@
             android:layout_below="@id/empofficialid"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-
+            android:gravity="center"
             android:hint="Personal ID" />
 
         <EditText
@@ -99,7 +100,7 @@
             android:layout_below="@id/emppersonalid"
             android:layout_margin="20dp"
             android:background="@drawable/edback"
-
+            android:gravity="center"
             android:hint="Password" />
 
         <Spinner
@@ -108,25 +109,36 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/emppassword"
             android:layout_margin="20dp"
-            android:background="@drawable/spinnerbg" />
+            android:background="@color/white" />
 
         <Spinner
-            android:id="@+id/gender"
+            android:id="@+id/salesagent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/status"
             android:layout_margin="20dp"
-            android:background="@drawable/spinnerbg" />
+            android:background="@color/white" />
+        <Spinner
+            android:id="@+id/currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salesagent"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
 
+        <Spinner
+            android:id="@+id/discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/currency"
+            android:layout_margin="20dp"
+            android:background="@color/white" />
         <Button
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/gender"
+            android:layout_below="@id/discount"
             android:layout_margin="25dp"
-            android:background="@drawable/edback"
-            android:text="Register"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/black" />
+            android:text="Register" />
     </RelativeLayout>
 </ScrollView>
