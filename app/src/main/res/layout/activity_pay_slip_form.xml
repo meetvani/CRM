@@ -12,16 +12,16 @@
         android:layout_margin="20dp">
 
         <Spinner
+            android:id="@+id/Employee_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Employee_id"
-            android:hint="Select Employee"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/edittext_bg"
-            android:padding="15dp"
-            android:elevation="6dp"/>
+            android:elevation="6dp"
+            android:hint="Select Employee"
+            android:padding="15dp" />
 
         <Spinner
             android:layout_width="match_parent"
@@ -65,18 +65,17 @@
 
 
         <Spinner
+            android:id="@+id/salary_month"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/salary_month"
             android:layout_below="@+id/designation"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
             android:layout_marginRight="5dp"
-            android:layout_marginTop="15dp"
-            android:hint="Select Month"
             android:background="@drawable/edittext_bg"
-            android:padding="15dp"
-            android:elevation="6dp"/>
-
+            android:elevation="6dp"
+            android:hint="Select Month"
+            android:padding="15dp" />
 
         <EditText
             android:layout_width="match_parent"

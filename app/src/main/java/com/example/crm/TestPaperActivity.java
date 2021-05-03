@@ -7,23 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class PaySlipSecondActivity extends AppCompatActivity {
+public class TestPaperActivity extends AppCompatActivity {
 
-    Button btnnext;
-
-
+    Button btn_done;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pay_slip_second);
+        setContentView(R.layout.activity_test_paper);
 
-        btnnext = findViewById(R.id.slip_submit);
+        btn_done = findViewById(R.id.test_done_btn);
 
-        btnnext.setOnClickListener(new View.OnClickListener() {
+        btn_done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PaySlipSecondActivity.this, NewProposalActivity.class);
+                Intent intent = new Intent(TestPaperActivity.this, TestPaperRespondActivity.class);
                 startActivity(intent);
             }
         });

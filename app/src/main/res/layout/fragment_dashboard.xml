@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
         android:text="Leave Management"
-        android:textSize="12"
+        android:textSize="12sp"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
 </androidx.cardview.widget.CardView>

@@ -5,25 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
-public class PaySlipSecondActivity extends AppCompatActivity {
+public class TestPaperRespondActivity extends AppCompatActivity {
 
-    Button btnnext;
-
-
+    TextView summery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pay_slip_second);
+        setContentView(R.layout.activity_test_paper_respond);
 
-        btnnext = findViewById(R.id.slip_submit);
+        summery = findViewById(R.id.summery);
 
-        btnnext.setOnClickListener(new View.OnClickListener() {
+        summery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PaySlipSecondActivity.this, NewProposalActivity.class);
+                Intent intent = new Intent(TestPaperRespondActivity.this, TestPaperSummerActivity.class);
                 startActivity(intent);
             }
         });

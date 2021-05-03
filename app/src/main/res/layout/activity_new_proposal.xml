@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewProposalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Description"
+            android:background="@drawable/edittext_bg"
+            android:padding="15dp"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/long_description"
+            android:layout_below="@+id/description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Long Description"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rate_usd"
+            android:layout_below="@+id/long_description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Rate . USD (Base Currency)"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rate_inr"
+            android:layout_below="@+id/rate_usd"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Rate - INR"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tax_1"
+            android:layout_below="@+id/rate_inr"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tax_2"
+            android:layout_below="@+id/tax_1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unit"
+            android:layout_below="@+id/tax_2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Email"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_group"
+            android:layout_below="@+id/unit"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Phone"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Add_unit"
+            android:layout_below="@+id/item_group"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="50dp"
+            app:backgroundTint="@color/purple_200"
+            android:hint="Save"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:elevation="6dp"/>
+    </RelativeLayout>
+
+
+    </ScrollView>
