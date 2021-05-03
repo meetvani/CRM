@@ -18,20 +18,23 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@drawable/edback"
+            android:background="@drawable/customer_details_bg"
             android:drawableEnd="@drawable/ic_baseline_search_24"
             android:drawableRight="@drawable/ic_baseline_search_24"
-            android:hint="search" />
+            android:hint="search"
+            android:padding="5dp" />
 
         <Spinner
             android:id="@+id/customer_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@drawable/spinnerbg" />
+            android:background="@drawable/customer_details_bg" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customer_details_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
