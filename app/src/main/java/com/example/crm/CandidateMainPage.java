@@ -9,7 +9,7 @@ import android.view.View;
 
 public class CandidateMainPage extends AppCompatActivity {
 
-    CardView register, shortlisted , onlinetest;
+    CardView register, shortlisted , onlinetest, documentation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,12 @@ public class CandidateMainPage extends AppCompatActivity {
         register = findViewById(R.id.register);
         shortlisted = findViewById(R.id.shortlisted);
         onlinetest = findViewById(R.id.onlinetest);
+        documentation = findViewById(R.id.documentation);
+
+        documentation.setOnClickListener(v -> {
+            Intent intent = new Intent(CandidateMainPage.this, DocumentationActivity.class);
+            startActivity(intent);
+        });
 
         shortlisted.setOnClickListener(v -> {
             Intent intent = new Intent(CandidateMainPage.this, ShortlistedCandidateDetailsActivity.class);

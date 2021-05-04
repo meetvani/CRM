@@ -20,7 +20,7 @@ public class UpdateCustomerRemark extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.priority);
         spinner.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, new String[]{"Priority", "Low", "High", "Critical", "Emergency"}));
 
-        button.setOnClickListener(v -> startActivity(new Intent(UpdateCustomerRemark.this,CustomerDetails.class)));
+        button.setOnClickListener(v -> startActivity(new Intent(UpdateCustomerRemark.this, CustomersDetails.class)));
 
     }
 }
