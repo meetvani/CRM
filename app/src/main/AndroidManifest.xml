@@ -11,11 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".DocumentationActivity"></activity>
+        <activity android:name=".ReportingtimeActivity"></activity>
+        <activity android:name=".DocumentationActivity" />
         <activity android:name=".PaySlipSecondActivity" />
         <activity android:name=".PaySlipFormActivity" />
         <activity android:name=".CandidateRemark" />
-
         <activity android:name=".CandidateRegistration" />
         <activity android:name=".NewProposalActivity" />
         <activity android:name=".ShortlistedCandidateFullDetailsActivity" />
@@ -23,13 +23,12 @@
         <activity android:name=".TestPaperRespondActivity" />
         <activity android:name=".TestPaperActivity" />
         <activity android:name=".TestPaperSummerActivity" />
-        <activity android:name=".CandidateMainPage"/>
-        <activity android:name=".CustomerDetails"></activity>
+        <activity android:name=".CandidateMainPage" />
+        <activity android:name=".CustomerDetails" />
         <activity android:name=".EmployeeRegistration" />
-        <activity android:name=".AttendanceActivity"></activity>
-
+        <activity android:name=".AttendanceActivity" />
         <activity android:name=".CustomerRegisteration" />
-        <activity android:name=".HomeActivity"/>
+        <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
