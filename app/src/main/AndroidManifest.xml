@@ -27,12 +27,9 @@
         <activity android:name=".CustomerDetails"></activity>
         <activity android:name=".EmployeeRegistration" />
         <activity android:name=".AttendanceActivity"></activity>
-        <activity android:name=".EmployeeRegistration" />
+
         <activity android:name=".CustomerRegisteration" />
         <activity android:name=".HomeActivity"/>
-        <activity android:name=".CandidateMainPage"/>
-        <activity android:name=".CandidateRegistration"/>
-        <activity android:name=".CandidateRemark"/>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
