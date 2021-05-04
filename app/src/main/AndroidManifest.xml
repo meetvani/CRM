@@ -13,7 +13,7 @@
         <activity android:name=".PaySlipSecondActivity" />
         <activity android:name=".PaySlipFormActivity" />
         <activity android:name=".CandidateRemark" />
-        <activity android:name=".LoginActivity" />
+
         <activity android:name=".CandidateRegistration" />
         <activity android:name=".NewProposalActivity" />
         <activity android:name=".ShortlistedCandidateFullDetailsActivity" />
@@ -21,15 +21,12 @@
         <activity android:name=".TestPaperRespondActivity" />
         <activity android:name=".TestPaperActivity" />
         <activity android:name=".TestPaperSummerActivity" />
-        <activity android:name=".CandidateMainPage">
+        <activity android:name=".CandidateMainPage"/>
         <activity android:name=".CustomerDetails"></activity>
         <activity android:name=".EmployeeRegistration" />
         <activity android:name=".CustomerRegisteration" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".CandidateMainPage" />
-        <activity android:name=".CandidateRegistration" />
-        <activity android:name=".CandidateRemark" />
-        <activity android:name=".LoginActivity">
+            <activity android:name=".LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
