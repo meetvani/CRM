@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.crm">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,9 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".EmployeeRegistration"></activity>
-        <activity android:name=".CustomerRegisteration" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".DocumentationActivity"></activity>
+        <activity android:name=".PaySlipSecondActivity" />
+        <activity android:name=".PaySlipFormActivity" />
+        <activity android:name=".CandidateRemark" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CandidateRegistration" />
+        <activity android:name=".NewProposalActivity" />
+        <activity android:name=".ShortlistedCandidateFullDetailsActivity" />
+        <activity android:name=".ShortlistedCandidateDetailsActivity" />
+        <activity android:name=".TestPaperRespondActivity" />
+        <activity android:name=".TestPaperActivity" />
+        <activity android:name=".TestPaperSummerActivity" />
+        <activity android:name=".CandidateMainPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

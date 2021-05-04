@@ -13,4 +13,6 @@
     <color name="yellow">#EFE502</color>
     <color name="green">#20AE36</color>
     <color name="grey">#c4c4c4</color>
+    <color name="lightsky">#D5E0F3</color>
+    <color name="skyblue" />
 </resources>
