@@ -14,6 +14,6 @@ Button login;
         setContentView(R.layout.activity_login);
         login=findViewById(R.id.login_button);
 
-        login.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this,CustomerRegisteration.class)));
+        login.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this,HomeActivity.class)));
     }
 }
