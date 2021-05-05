@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".WebmailActivity"></activity>
+        <activity android:name=".WebmailCompose"></activity>
+        <activity android:name=".WebmailActivity" />
         <activity android:name=".ReportingtimeActivity" />
-        <activity android:name=".EmployeeRegisterSecondActivity"></activity>
+        <activity android:name=".EmployeeRegisterSecondActivity" />
         <activity android:name=".EmployeeRegistrationActvity" />
         <activity android:name=".EmployeeDashboardActivity" />
         <activity android:name=".DocumentationActivity" />
