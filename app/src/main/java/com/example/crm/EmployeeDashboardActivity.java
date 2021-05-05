@@ -9,7 +9,7 @@ import android.view.View;
 
 public class EmployeeDashboardActivity extends AppCompatActivity {
 
-    CardView register;
+    CardView register, department;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,12 @@ public class EmployeeDashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_employee_dashboard);
 
         register = findViewById(R.id.employee_register);
+        department = findViewById(R.id.departments);
+
+        department.setOnClickListener(v -> {
+            Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeDepartmentActivity.class);
+            startActivity(intent);
+        });
 
         register.setOnClickListener(v -> {
             Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeRegistrationActvity.class);
