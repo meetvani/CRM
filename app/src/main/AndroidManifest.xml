@@ -16,7 +16,6 @@
         <activity android:name=".EmployeeDashboardActivity" />
         <activity android:name=".DocumentationActivity" />
         <activity android:name=".ReportingtimeActivity"></activity>
-        <activity android:name=".DocumentationActivity" />
         <activity android:name=".PaySlipSecondActivity" />
         <activity android:name=".PaySlipFormActivity" />
         <activity android:name=".CandidateRemark" />
