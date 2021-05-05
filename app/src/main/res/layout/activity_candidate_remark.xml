@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_pana"
     tools:context=".CandidateRemark">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_margin="10dp">
 
         <RelativeLayout
             android:id="@+id/linear"
@@ -19,6 +18,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <RelativeLayout
@@ -80,6 +80,13 @@
 
         </RelativeLayout>
 
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_cuate"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_btn"
-                app:backgroundTint="@color/grey"
+                app:backgroundTint="@color/lightgrey"
                 android:layout_marginTop="10dp"/>
 
 
@@ -185,7 +192,7 @@
 
             <Spinner
                 android:id="@+id/department"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text2"
                 android:layout_marginLeft="5dp"
@@ -206,7 +213,7 @@
                 android:layout_below="@+id/text"/>
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/candidate_designation"
                 android:layout_below="@+id/department"
@@ -214,7 +221,9 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
-                android:padding="6dp"
+                android:padding="13dp"
+                android:textSize="15sp"
+                android:inputType="text"
                 android:elevation="6dp"/>
 
             <TextView
@@ -227,7 +236,7 @@
                 android:layout_below="@+id/text"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/status"
                 android:layout_below="@+id/candidate_designation"
@@ -257,23 +266,24 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
-                android:padding="15dp"
+                android:padding="13dp"
+                android:textSize="15sp"
+                android:inputType="textEmailAddress"
                 android:elevation="6dp"/>
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:id="@+id/candidate_remark_resume"
                 android:layout_below="@+id/candidate_remark"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="50dp"
                 android:text="Update"
-                android:textColor="@color/green"
-                app:backgroundTint="@color/grey"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/megenta"
                 android:background="@drawable/bg_btn"
-                android:padding="15dp"
                 android:elevation="6dp"/>
 
         </LinearLayout>
