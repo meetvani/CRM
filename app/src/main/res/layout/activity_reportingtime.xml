@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportingtimeActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#AFC9FF"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="04/May/2021"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:id="@+id/datereporting"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="09:50 am"
+                android:layout_below="@id/datereporting"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:id="@+id/logintime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="05:50 pm"
+                android:layout_toRightOf="@id/logintime"
+                android:layout_below="@id/datereporting"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:id="@+id/logouttime" />
+
+            <Button
+                android:id="@+id/buttonlogin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logintime"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="@color/black"
+                android:text="Log IN " />
+
+            <Button
+                android:id="@+id/buttonlogout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logouttime"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/buttonlogin"
+                android:backgroundTint="@color/black"
+                android:text="Log Out" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
