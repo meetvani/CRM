@@ -13,6 +13,10 @@
         android:theme="@style/Theme.CRM">
         <activity android:name=".EmployeeDepartmentActivity"></activity>
         <activity android:name=".EmployeeRegisterSecondActivity" />
+        <activity android:name=".WebmailCompose"></activity>
+        <activity android:name=".WebmailActivity" />
+        <activity android:name=".ReportingtimeActivity" />
+        <activity android:name=".EmployeeRegisterSecondActivity" />
         <activity android:name=".EmployeeRegistrationActvity" />
         <activity android:name=".EmployeeDashboardActivity" />
         <activity android:name=".DocumentationActivity" />
