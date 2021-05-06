@@ -10,15 +10,32 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.crm.EmployeeDashboardActivity;
 import com.example.crm.R;
 import com.example.crm.WebmailActivity;
 
 public class DashboardFragment extends Fragment {
 CardView webmailcard;
+
+    CardView cardView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragment_dashboard, container, false);
+
+        cardView = v.findViewById(R.id.employee);
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent  = new Intent(getContext(), EmployeeDashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        return v;
         View v=inflater.inflate(R.layout.fragment_dashboard, container, false);
         webmailcard=v.findViewById(R.id.webmail);
         webmailcard.setOnClickListener(view -> {
