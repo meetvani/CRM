@@ -26,7 +26,10 @@ CardView webmailcard;
         View v = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         cardView = v.findViewById(R.id.employee);
-
+        webmailcard=v.findViewById(R.id.webmail);
+        webmailcard.setOnClickListener(view -> {
+            startActivity(new Intent(getContext(), WebmailActivity.class));
+        });
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,11 +39,6 @@ CardView webmailcard;
         });
 
         return v;
-        View v=inflater.inflate(R.layout.fragment_dashboard, container, false);
-        webmailcard=v.findViewById(R.id.webmail);
-        webmailcard.setOnClickListener(view -> {
-            startActivity(new Intent(getContext(), WebmailActivity.class));
-        });
-        return v;
+
     }
 }
