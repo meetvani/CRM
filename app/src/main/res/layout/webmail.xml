@@ -6,6 +6,7 @@
 <androidx.appcompat.widget.Toolbar
     android:layout_width="match_parent"
     android:id="@+id/tool"
+    android:background="#548EFF"
     android:layout_height="?actionBarSize"/>
     <FrameLayout
         android:id="@+id/frame1"

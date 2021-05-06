@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/contact"
-        android:title="Draft"
+        android:title="Contact"
         android:icon="@drawable/draftbg"/>
     <item
         android:id="@+id/calendar"
-        android:title="Draft"
+        android:title="Calendar"
         android:icon="@drawable/draftbg"/>
     <item
         android:id="@+id/settings"
-        android:title="Draft"
+        android:title="Settings"
         android:icon="@drawable/draftbg"/>
 </menu>
