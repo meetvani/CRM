@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.crm.EmployeeDashboardActivity;
+import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
 import com.example.crm.R;
 
 public class DashboardFragment extends Fragment {

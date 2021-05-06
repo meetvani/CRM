@@ -1,15 +1,16 @@
-package com.example.crm;
+package com.example.crm.EmployeeManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
+import com.example.crm.R;
 
 public class EmployeeDashboardActivity extends AppCompatActivity {
 
-    CardView register, department;
+    CardView register, department, documentation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,12 @@ public class EmployeeDashboardActivity extends AppCompatActivity {
 
         register = findViewById(R.id.employee_register);
         department = findViewById(R.id.departments);
+        documentation = findViewById(R.id.documentation);
+
+        documentation.setOnClickListener(v -> {
+            Intent intent = new Intent(EmployeeDashboardActivity.this, FlaxenDocumentationActivity.class);
+            startActivity(intent);
+        });
 
         department.setOnClickListener(v -> {
             Intent intent = new Intent(EmployeeDashboardActivity.this, EmployeeDepartmentActivity.class);

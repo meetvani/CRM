@@ -5,7 +5,9 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
+import com.example.crm.EmployeeManagement.DocumentationActivity;
+import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
 
 public class CandidateMainPage extends AppCompatActivity {
 

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeManagement.SalesEmployeeDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_black_stroke_bg"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Search Candidate"
+            android:drawableRight="@drawable/ic_baseline_search_24"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            android:elevation="8dp"
+            android:layout_below="@id/search">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_stroke">
+
+                <RelativeLayout
+                    android:id="@+id/rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name of Intern"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="@drawable/bg_text_btn_blue_stroke"
+                        android:hint="Intern"
+                        android:layout_marginRight="20dp"
+                        android:textColorHint="@color/blue_border"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/candidate_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/rel"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:text="Sent Documents"/>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_below="@+id/candidate_name"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Offer Letter"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Non Disclosure Application"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Verification Form"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Training Form"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Official Mail"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Official Sim"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Intern Certficate"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Releving Certificate"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/linear"
+                    android:layout_below="@id/candidate_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_offerletter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_disclouser_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/text_offerletter"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_verification"
+                        android:layout_below="@id/text_disclouser_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_training"
+                        android:layout_below="@id/text_verification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_official_mail"
+                        android:layout_below="@id/text_training"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_official_sim"
+                        android:layout_below="@id/text_official_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_intern_certificate"
+                        android:layout_below="@id/text_official_sim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_releving_certificate"
+                        android:layout_below="@id/text_intern_certificate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="sent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/received"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/linear"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Recived Documents"/>
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_below="@+id/received"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Aadhar Card"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="PAN Card"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Professional Photograpn"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="10th Marksheet"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="12th Marksheet"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Graduation Marksheet"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Graduation Certficate"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Previous Company Certificate(if any)"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Cheque"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Account Details"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/linear1"
+                    android:layout_below="@id/received"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_offerletter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_disclouser_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/text_offerletter"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_verification"
+                        android:layout_below="@id/text_disclouser_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_training"
+                        android:layout_below="@id/text_verification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_official_mail"
+                        android:layout_below="@id/text_training"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_official_sim"
+                        android:layout_below="@id/text_official_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_intern_certificate"
+                        android:layout_below="@id/text_official_sim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_releving_certificate"
+                        android:layout_below="@id/text_intern_certificate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_cheque"
+                        android:layout_below="@id/text_releving_certificate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/text_acc_details"
+                        android:layout_below="@id/text_cheque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"/>
+
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Send"
+                    android:background="@drawable/bg_btn"
+                    app:backgroundTint="@color/green"
+                    android:layout_below="@+id/linear1"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
