@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:shownIn="bottomnav"
+    >
+<item android:id="@+id/inbox"
+    android:title="Inbox"
+    android:icon="@drawable/inboxbg"/>
+    <item
+        android:id="@+id/draft"
+        android:title="Draft"
+        android:icon="@drawable/draftbg"/>
+    <item
+        android:id="@+id/trash"
+        android:title="Trash"
+        android:icon="@drawable/trashbg"/>
+    <item
+        android:id="@+id/junk"
+        android:title="Junk"
+        android:icon="@drawable/junkbg"/>
+    <item
+        android:id="@+id/archieve"
+        android:title="Archieve"
+        android:icon="@drawable/archievebg"/>
+<!--    <item-->
+<!--        android:id="@+id/contact"-->
+<!--        android:title="Draft"-->
+<!--        android:icon="@drawable/draftbg"/>-->
+<!--    <item-->
+<!--        android:id="@+id/calendar"-->
+<!--        android:title="Draft"-->
+<!--        android:icon="@drawable/draftbg"/>-->
+<!--    <item-->
+<!--        android:id="@+id/settings"-->
+<!--        android:title="Draft"-->
+<!--        android:icon="@drawable/draftbg"/>-->
+</menu>
