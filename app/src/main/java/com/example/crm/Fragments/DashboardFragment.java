@@ -12,8 +12,10 @@ import android.view.ViewGroup;
 
 import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
 import com.example.crm.R;
+import com.example.crm.WebmailActivity;
 
 public class DashboardFragment extends Fragment {
+CardView webmailcard;
 
     CardView cardView;
 
@@ -24,7 +26,10 @@ public class DashboardFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         cardView = v.findViewById(R.id.employee);
-
+        webmailcard=v.findViewById(R.id.webmail);
+        webmailcard.setOnClickListener(view -> {
+            startActivity(new Intent(getContext(), WebmailActivity.class));
+        });
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,5 +39,6 @@ public class DashboardFragment extends Fragment {
         });
 
         return v;
+
     }
 }
