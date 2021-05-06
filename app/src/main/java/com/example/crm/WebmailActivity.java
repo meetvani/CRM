@@ -2,9 +2,12 @@ package com.example.crm;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.crm.Fragments.ArchieveFragment;
@@ -16,10 +19,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class WebmailActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
+Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webmail);
+        toolbar=findViewById(R.id.tool);
         bottomNavigationView=findViewById(R.id.bottomnav);
         getSupportFragmentManager().beginTransaction().replace(R.id.frame1, new InboxFragment()).commit();
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
@@ -58,4 +63,10 @@ BottomNavigationView bottomNavigationView;
         }
     };
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater= getMenuInflater();
+        menuInflater.inflate(R.menu.option,menu);
+        return true;
+    }
 }

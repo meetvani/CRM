@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.ArchieveFragment">
+    tools:context=".WebmailActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:background="@drawable/webmailbg"
+        android:layout_margin="5dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edback"
+            android:layout_margin="15dp"
+            android:id="@+id/searchbarwebmail"
+            android:hint="search"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchbarwebmail"
+            android:background="@color/white"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+</RelativeLayout>
