@@ -5,9 +5,70 @@
     android:layout_height="match_parent"
     tools:context=".AttendanceActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/candidate_attendance"
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cardview1"
+        app:cardBackgroundColor="#AFC9FF"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameemployee"
+                android:text="Name Of Employee"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/designationemployee"
+                android:text="Designation Of Employee"
+                android:layout_margin="10dp"
+                android:layout_below="@id/nameemployee"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cardview2"
+        app:cardBackgroundColor="#AFC9FF"
+        android:layout_below="@id/cardview1"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameemployee1"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:text="Name Of Employee"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/designationemployee1"
+                android:layout_margin="10dp"
+                android:text="Designation Of Employee"
+                android:layout_below="@id/nameemployee1"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

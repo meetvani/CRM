@@ -22,16 +22,5 @@
         android:id="@+id/archieve"
         android:title="Archieve"
         android:icon="@drawable/archievebg"/>
-<!--    <item-->
-<!--        android:id="@+id/contact"-->
-<!--        android:title="Draft"-->
-<!--        android:icon="@drawable/draftbg"/>-->
-<!--    <item-->
-<!--        android:id="@+id/calendar"-->
-<!--        android:title="Draft"-->
-<!--        android:icon="@drawable/draftbg"/>-->
-<!--    <item-->
-<!--        android:id="@+id/settings"-->
-<!--        android:title="Draft"-->
-<!--        android:icon="@drawable/draftbg"/>-->
+
 </menu>
