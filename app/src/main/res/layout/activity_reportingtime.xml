@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="04/May/2021"
+                android:text=" Date - 04/May/2021"
                 android:textStyle="bold"
                 android:textSize="25dp"
                 android:id="@+id/datereporting"/>
@@ -28,21 +28,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="09:50 am"
+                android:text="Login at 09:50 am"
                 android:layout_below="@id/datereporting"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="16dp"
                 android:id="@+id/logintime"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:text="05:50 pm"
+                android:text="Logout at 05:50 pm"
                 android:layout_toRightOf="@id/logintime"
                 android:layout_below="@id/datereporting"
                 android:textStyle="bold"
-                android:textSize="25dp"
+                android:textSize="16dp"
                 android:id="@+id/logouttime" />
 
             <Button
