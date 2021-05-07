@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CandidateRemark">
+    tools:context=".HRManagement.CandidateRemark">
 
 
     <RelativeLayout
@@ -244,6 +244,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
                 android:hint="Department"
+                android:entries="@array/Status"
                 android:background="@drawable/edittext_bg"
                 android:padding="6dp"
                 android:elevation="6dp"/>

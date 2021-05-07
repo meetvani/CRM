@@ -7,24 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class TestPaperActivity extends AppCompatActivity {
+public class LeaveManagementActivity extends AppCompatActivity {
 
-    Button btn_done;
+    Button btn_accept;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_paper);
+        setContentView(R.layout.activity_leave_management);
 
-        btn_done = findViewById(R.id.test_done_btn);
+        btn_accept = findViewById(R.id.accept);
 
-        btn_done.setOnClickListener(new View.OnClickListener() {
+        btn_accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TestPaperActivity.this, TestPaperRespondActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(LeaveManagementActivity.this, LeaveDetailsActivity.class));
             }
         });
-
     }
 }

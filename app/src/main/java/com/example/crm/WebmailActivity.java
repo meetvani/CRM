@@ -16,6 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class WebmailActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,12 +45,15 @@ BottomNavigationView bottomNavigationView;
                 case R.id.trash:
                    selectedFragment = new TrashFragment();
                     break;
+
                 case R.id.junk:
                     selectedFragment= new JunkFragment();
                     break;
+
                 case R.id.archieve:
                     selectedFragment=new ArchieveFragment();
                     break;
+
             }
 
             getSupportFragmentManager().beginTransaction().replace(R.id.frame1, selectedFragment).commit();

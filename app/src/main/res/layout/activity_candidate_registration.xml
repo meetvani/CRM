@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".CandidateRegistration"
+    tools:context=".HRManagement.CandidateRegistration"
     android:padding="10dp">
 
     <RelativeLayout
@@ -267,6 +267,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
+                android:entries="@array/Spinner_items_city"
                 android:hint="City"
                 android:background="@drawable/edittext_bg"
                 android:padding="6dp"
@@ -289,6 +290,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
                 android:hint="Select city"
+                android:entries="@array/Spinner_items_state"
                 android:background="@drawable/edittext_bg"
                 android:padding="6dp"
                 android:elevation="6dp"/>

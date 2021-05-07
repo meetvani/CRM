@@ -1,11 +1,12 @@
-package com.example.crm;
+package com.example.crm.HRManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
+import com.example.crm.R;
 
 public class ShortlistedCandidateDetailsActivity extends AppCompatActivity {
 
