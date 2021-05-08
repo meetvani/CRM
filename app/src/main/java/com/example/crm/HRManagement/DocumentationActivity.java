@@ -1,4 +1,4 @@
-package com.example.crm.EmployeeManagement;
+package com.example.crm.HRManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 

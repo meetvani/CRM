@@ -7,15 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 
 import com.example.crm.PaySlipFormActivity;
 import com.example.crm.R;
 
+import net.cachapa.expandablelayout.ExpandableLayout;
+
 public class CandidateRemark extends AppCompatActivity {
 
     Button btnresume;
     Spinner spin_department, spin_status;
+    RadioButton job, intern;
+    ExpandableLayout expandablemycontent, expandableinterncontent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,9 @@ public class CandidateRemark extends AppCompatActivity {
         btnresume = findViewById(R.id.candidate_remark_resume);
         spin_department = findViewById(R.id.department);
         spin_status = findViewById(R.id.status);
+
+        job = findViewById(R.id.job);
+        intern = findViewById(R.id.intern);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Department, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -42,5 +50,15 @@ public class CandidateRemark extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void showmyinformation(View view){
+        expandablemycontent = (ExpandableLayout) findViewById(R.id.mycontent);
+        expandablemycontent.toggle();
+    }
+
+    public void showjobinformation(View view){
+        expandableinterncontent = findViewById(R.id.myjobcontent);
+        expandableinterncontent.toggle();
     }
 }

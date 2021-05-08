@@ -11,15 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.crm.AttendanceActivity;
+import com.example.crm.CRMManagement.CRMDashboardActivity;
 import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
+import com.example.crm.HRManagement.CandidateMainPage;
 import com.example.crm.LeaveManagementActivity;
 import com.example.crm.R;
 import com.example.crm.WebmailActivity;
 
+import java.net.Inet4Address;
+
 public class DashboardFragment extends Fragment {
 CardView webmailcard;
 
-    CardView employee_cardView, leave_card;
+    CardView employee_cardView, leave_card, crm_card, candidate_card;
     CardView cardView,attendancecard;
 
     @Override
@@ -33,6 +37,12 @@ CardView webmailcard;
         attendancecard=v.findViewById(R.id.attendance);
         webmailcard=v.findViewById(R.id.webmail);
         leave_card = v.findViewById(R.id.leavemanagement);
+        crm_card = v.findViewById(R.id.crm);
+        candidate_card = v.findViewById(R.id.candidate);
+
+        crm_card.setOnClickListener(v13 -> startActivity(new Intent(getContext(), CRMDashboardActivity.class)));
+
+        candidate_card.setOnClickListener(v14 -> startActivity(new Intent(getContext(), CandidateMainPage.class)));
 
         leave_card.setOnClickListener(v1 -> {
             Intent intent = new Intent(getContext(), LeaveManagementActivity.class);

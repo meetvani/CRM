@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".HRManagement.CandidateRegistration">
-
+    android:layout_height="match_parent"
+    tools:context=".CRMManagement.CRM_RegisterActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,78 +41,10 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <RelativeLayout
-            android:id="@+id/linear"
-            android:layout_below="@id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/info">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1"
-                    android:textColor="@color/yellow"
-                    android:layout_centerHorizontal="true"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Info"
-                    android:textColor="@color/yellow"
-                    android:layout_marginTop="20dp"
-                    android:layout_centerHorizontal="true"/>
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:background="@color/black"
-                android:layout_toRightOf="@+id/info"
-                android:layout_toLeftOf="@+id/phase"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-               android:layout_centerVertical="true"
-                />
-
-            <RelativeLayout
-                android:id="@+id/phase"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2"
-                    android:textColor="@color/green"
-                    android:layout_centerHorizontal="true"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Phase"
-                    android:textColor="@color/green"
-                    android:layout_marginTop="20dp"
-                    android:layout_centerHorizontal="true"/>
-
-            </RelativeLayout>
-
-        </RelativeLayout>
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_pana"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true" />
@@ -122,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_below="@id/linear"
+            android:layout_below="@id/toolbar"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="50dp"
@@ -133,7 +64,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name of the Candidate"
+                android:text="Name of the Customer"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:textColor="@color/black"/>
@@ -154,21 +85,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone No"
+                android:text="Domain"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"/>
 
-            <EditText
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/candidate_phone"
+                android:id="@+id/domain"
                 android:layout_below="@+id/candidate_name"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edittext_bg"
-                android:padding="13dp"
+                android:padding="8dp"
                 android:textSize="15sp"
                 android:inputType="number"
                 android:elevation="6dp"/>
@@ -176,36 +107,36 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alternate Phone No"
+                android:text="Sub Domain"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sub_domain"
+                android:layout_below="@+id/candidate_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:elevation="6dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package Name"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/candidate_alt_phone"
-                android:layout_below="@+id/candidate_phone"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_bg"
-                android:padding="13dp"
-                android:textSize="15sp"
-                android:inputType="number"
-                android:elevation="6dp"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Official Id"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp"/>
-
-            <EditText
-                android:layout_width="290dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/candidate_personal_email"
                 android:layout_below="@+id/candidate_alt_phone"
@@ -221,24 +152,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Personal Id"
+                android:text="Package Value"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"/>
 
             <EditText
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
                 android:id="@+id/candidate_official_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/candidate_personal_email"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/edittext_bg"
-                android:padding="13dp"
-                android:textSize="15sp"
+                android:elevation="6dp"
                 android:inputType="text"
-                android:elevation="6dp"/>
+                android:padding="13dp"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -249,7 +180,7 @@
                 android:layout_marginTop="10dp"/>
 
             <EditText
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/candidate_source"
                 android:layout_below="@+id/candidate_official_email"
@@ -265,14 +196,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address"
+                android:text="Mail Id"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="20dp"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/candidate_address"
                 android:layout_below="@+id/candidate_source"
                 android:layout_marginLeft="5dp"
@@ -287,12 +218,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="City"
+                android:text="Phone No"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"/>
 
-            <Spinner
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/candidate_city"
@@ -301,7 +232,6 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
                 android:entries="@array/Spinner_items_city"
-                android:hint="City"
                 android:background="@drawable/edittext_bg"
                 android:padding="6dp"
                 android:elevation="6dp"/>
@@ -317,50 +247,81 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/candidate_state"
-                android:layout_below="@+id/candidate_city"
+                android:id="@+id/state"
+                android:layout_below="@+id/candidate_address"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
-                android:hint="Select city"
-                android:entries="@array/Spinner_items_state"
+                android:entries="@array/Spinner_items_city"
                 android:background="@drawable/edittext_bg"
                 android:padding="6dp"
                 android:elevation="6dp"/>
 
-            <View
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/black"
-                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/city"
+                android:layout_below="@+id/candidate_address"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/Spinner_items_city"
+                android:background="@drawable/edittext_bg"
+                android:padding="8dp"
+                android:elevation="6dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Upload Resume"
+                android:text="Gender"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="10dp"/>
 
-            <Button
+            <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:layout_below="@+id/candidate_city"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:hint=""
+            android:entries="@array/Gender"
+            android:background="@drawable/edittext_bg"
+            android:padding="8dp"
+            android:elevation="6dp"/>
+
+            <EditText
+                android:id="@+id/review"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Browse"
-                android:background="@drawable/bg_btn"
-                app:backgroundTint="@color/megenta"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"/>
+                android:layout_height="150dp"
+                android:layout_below="@+id/candidate_city"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="6dp"
+                android:entries="@array/Gender"
+                android:hint=""
+                android:padding="6dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/candidate_resume"
+                android:id="@+id/cust_reg"
                 android:layout_below="@+id/candidate_state"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="50dp"
                 android:text="Register"
                 android:textColor="@color/white"
@@ -373,8 +334,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-
-
 
 </ScrollView>

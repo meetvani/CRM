@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".LeaveDetailsActivity"></activity>
+        <activity android:name=".CRMManagement.CRM_RegisterActivity"></activity>
+        <activity android:name=".CRMManagement.CRMDashboardActivity" />
+        <activity android:name=".LeaveDetailsActivity" />
         <activity android:name=".LeaveManagementActivity" />
         <activity android:name=".EmployeeManagement.DigitalMarketingEmployeeDetailsActivity" />
         <activity android:name=".EmployeeManagement.DevelopmentEmployeeDetailsActivity" />
@@ -25,7 +27,7 @@
         <activity android:name=".ReportingtimeActivity" />
         <activity android:name=".EmployeeManagement.EmployeeRegistrationActvity" />
         <activity android:name=".EmployeeManagement.EmployeeDashboardActivity" />
-        <activity android:name=".EmployeeManagement.DocumentationActivity" />
+        <activity android:name=".HRManagement.DocumentationActivity" />
         <activity android:name=".PaySlipSecondActivity" />
         <activity android:name=".PaySlipFormActivity" />
         <activity android:name=".HRManagement.CandidateRemark" />
@@ -37,7 +39,8 @@
         <activity android:name=".HRManagement.TestPaperActivity" />
         <activity android:name=".HRManagement.TestPaperSummerActivity" />
         <activity android:name=".HRManagement.CandidateMainPage" />
-        <activity android:name=".CustomerDetails" />
+        <activity android:name=".CRMManagement.CustomerDetails" />
+        <activity android:name=".CustomersDetails" />
         <activity android:name=".EmployeeRegistration" />
         <activity android:name=".AttendanceActivity" />
         <activity android:name=".CustomerRegisteration" />

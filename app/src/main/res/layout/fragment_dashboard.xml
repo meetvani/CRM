@@ -135,7 +135,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:id="@+id/interviews"
+        android:id="@+id/crm"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="17dp"
         android:layout_toRightOf="@id/candidate"
@@ -148,12 +148,12 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="25dp"
-            android:src="@drawable/payslip"/>
+            android:src="@drawable/ic_crm"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:text="Interviews"
+            android:text="CRM"
             android:textAlignment="center"
             android:gravity="center_horizontal" />
     </androidx.cardview.widget.CardView>
@@ -329,5 +329,30 @@
             android:textAlignment="center"
             android:gravity="center_horizontal" />
     </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/interviews"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="17sp"
+            android:layout_below="@id/expenses"
+            android:layout_toRightOf="@+id/reporting"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/payslip"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:text="Interviews"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </RelativeLayout>

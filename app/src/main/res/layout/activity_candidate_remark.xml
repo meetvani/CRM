@@ -10,10 +10,40 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_backarrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
 
         <RelativeLayout
             android:id="@+id/linear"
+            android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="60dp"
@@ -92,6 +122,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_below="@id/linear"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="50dp"
             android:padding="10dp"
             android:background="@drawable/bg_stroke"
@@ -134,7 +166,8 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Intern"
+                    android:text="Internship"
+                    android:onClick="showmyinformation"
                     android:layout_marginLeft="10dp"
                     android:id="@+id/intern"/>
 
@@ -142,10 +175,204 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Job"
+                    android:onClick="showjobinformation"
                     android:layout_marginLeft="10dp"
                     android:id="@+id/job"/>
 
             </RadioGroup>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/mycontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="300"
+                app:el_parallax="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtcollage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Collage"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/collage"
+                        android:layout_below="@id/txtcollage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="13dp"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:elevation="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtduration"
+                        android:layout_below="@id/collage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/duration"
+                        android:layout_below="@id/txtduration"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="13dp"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:elevation="8dp"/>
+
+                    <TextView
+                        android:id="@+id/txtstipend"
+                        android:layout_below="@id/duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stipend"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/txtstipend">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="30dp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NO"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtamount"
+                        android:layout_below="@id/radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_below="@id/txtamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="13dp"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:elevation="8dp"/>
+                </LinearLayout>
+
+
+
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/myjobcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_expanded="false"
+                app:ael_duration="300"
+                app:el_parallax="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/internradiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/txtstipend">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fresher"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="30dp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Experience"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtjobamount"
+                        android:layout_below="@id/internradiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/jobamount"
+                        android:layout_below="@id/txtjobamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:padding="13dp"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:elevation="8dp"/>
+
+
+
+                </LinearLayout>
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
 
             <TextView
                 android:layout_width="wrap_content"

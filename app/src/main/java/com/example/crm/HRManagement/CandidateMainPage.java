@@ -6,7 +6,6 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.crm.EmployeeManagement.DocumentationActivity;
 import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
 import com.example.crm.R;
 
@@ -25,10 +24,10 @@ public class CandidateMainPage extends AppCompatActivity {
         documentation = findViewById(R.id.documentation);
         meeting = findViewById(R.id.meeting);
 
-        meeting.setOnClickListener(v -> {
-            Intent intent = new Intent(CandidateMainPage.this, EmployeeDashboardActivity.class);
-            startActivity(intent);
-        });
+//        meeting.setOnClickListener(v -> {
+//            Intent intent = new Intent(CandidateMainPage.this, EmployeeDashboardActivity.class);
+//            startActivity(intent);
+//        });
 
         documentation.setOnClickListener(v -> {
             Intent intent = new Intent(CandidateMainPage.this, DocumentationActivity.class);

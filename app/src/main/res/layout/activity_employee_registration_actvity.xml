@@ -12,20 +12,49 @@
         android:layout_height="wrap_content"
         android:id="@+id/relative">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_backarrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
         <RelativeLayout
             android:id="@+id/linear"
+            android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/info"
-                >
+                android:id="@+id/info">
 
 
                 <TextView
@@ -128,7 +157,7 @@
                     android:onClick="showmyinformation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Job"
+                    android:text="Internship"
                     android:layout_weight="1"/>
 
                 <RadioButton
@@ -136,7 +165,7 @@
                     android:onClick="showjobinformation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Internship"
+                    android:text="Job"
                     android:layout_weight="1"/>
 
             </RadioGroup>
@@ -365,13 +394,13 @@
                 android:layout_margin="5dp">
 
                 <RelativeLayout
-                    android:layout_width="230dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rel">
 
                     <TextView
                         android:id="@+id/txtphone"
-                        android:layout_width="230dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Phone No"
                         android:layout_marginTop="10dp"
@@ -379,7 +408,7 @@
                         android:textColor="@color/black" />
 
                     <EditText
-                        android:layout_width="230dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/candidate_alt_phone"
                         android:layout_below="@+id/txtphone"
@@ -397,15 +426,15 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/rel">
+                    android:layout_below="@id/rel">
 
-                    <ImageView
+                    <TextView
                         android:id="@+id/img"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:src="@drawable/ic_calender"
-                        android:layout_centerHorizontal="true"
+                        android:text="Date"
+                        android:layout_marginLeft="10dp"
                         android:textColor="@color/black" />
 
                     <Button
@@ -434,9 +463,8 @@
                 android:layout_margin="5dp">
 
                 <RelativeLayout
-                    android:layout_width="230dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:id="@+id/rel1">
 
                     <TextView
@@ -456,7 +484,7 @@
                         android:entries="@array/Spinner_items_state"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/edittext_bg"
-                        android:padding="6dp"
+                        android:padding="8dp"
                         android:layout_marginBottom="10dp"
                         android:elevation="6dp"/>
 
@@ -465,26 +493,28 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/rel1">
+                    android:layout_below="@id/rel1"
+                    android:layout_marginTop="10dp">
 
                     <TextView
-                        android:id="@+id/city"
+                        android:id="@+id/txtcity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Select City"
-                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
                         android:textColor="@color/black" />
 
                     <Spinner
-                        android:layout_width="match_parent"
+                        android:id="@+id/city"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/city"
+                        android:layout_below="@+id/txtcity"
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="10dp"
                         android:entries="@array/Spinner_items_city"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/edittext_bg"
-                        android:padding="6dp"
+                        android:padding="8dp"
                         android:elevation="6dp"/>
 
 
@@ -615,7 +645,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/employee_gender"
+                android:id="@+id/gender"
                 android:layout_below="@+id/candidate_city"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
