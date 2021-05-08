@@ -6,14 +6,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.crm.Fragments.DashboardFragment;
+import com.example.crm.HRManagement.CandidateMainPage;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeActivity extends AppCompatActivity {
@@ -50,7 +48,7 @@ public class HomeActivity extends AppCompatActivity {
                     drawer.closeDrawer(GravityCompat.START);
                     break;
                 case R.id.hrmanagement:
-                    startActivity(new Intent(getApplicationContext(),CandidateMainPage.class));
+                    startActivity(new Intent(getApplicationContext(), CandidateMainPage.class));
                     drawer.closeDrawer(GravityCompat.START);
                     break;
 //                case R.id.leaveoption:

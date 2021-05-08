@@ -24,6 +24,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class WebmailActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
+
 FloatingActionButton floatingActionButton;
 Toolbar toolbar;
     @Override
@@ -60,12 +61,15 @@ Toolbar toolbar;
                 case R.id.trash:
                    selectedFragment = new TrashFragment();
                     break;
+
                 case R.id.junk:
                     selectedFragment= new JunkFragment();
                     break;
+
                 case R.id.archieve:
                     selectedFragment=new ArchieveFragment();
                     break;
+
             }
 
             getSupportFragmentManager().beginTransaction().replace(R.id.frame1, selectedFragment).commit();

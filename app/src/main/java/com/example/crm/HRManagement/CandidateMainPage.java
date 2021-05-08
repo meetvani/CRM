@@ -1,4 +1,4 @@
-package com.example.crm;
+package com.example.crm.HRManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.example.crm.EmployeeManagement.DocumentationActivity;
 import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
+import com.example.crm.R;
 
 public class CandidateMainPage extends AppCompatActivity {
 

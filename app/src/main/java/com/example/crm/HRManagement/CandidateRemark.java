@@ -1,4 +1,4 @@
-package com.example.crm;
+package com.example.crm.HRManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+
+import com.example.crm.PaySlipFormActivity;
+import com.example.crm.R;
 
 public class CandidateRemark extends AppCompatActivity {
 

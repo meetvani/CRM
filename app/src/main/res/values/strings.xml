@@ -17,11 +17,17 @@
     </array>
 
     <string-array name="Spinner_items_city">
-
+        <item> Select city</item>
+        <item>Indore</item>
+        <item>Bombay</item>
+        <item>Pune</item>
     </string-array>
 
     <string-array name="Spinner_items_state">
-
+        <item>Select State</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Uttar pradesh</item>
     </string-array>
 
     <string-array name="Department">
@@ -29,8 +35,16 @@
     </string-array>
 
     <string-array name="Status">
-
+        <item>Logged In</item>
     </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

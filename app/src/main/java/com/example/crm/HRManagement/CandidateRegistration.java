@@ -1,30 +1,19 @@
-package com.example.crm;
+package com.example.crm.HRManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.example.crm.citystate.Cities;
-import com.example.crm.citystate.Rinterface;
-import com.example.crm.citystate.object;
+import com.example.crm.R;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class CandidateRegistration extends AppCompatActivity  {
 
