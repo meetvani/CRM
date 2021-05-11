@@ -8,6 +8,8 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.crm.CRMManagement.CustomersDetails;
+
 public class UpdateCustomerRemark extends AppCompatActivity {
     Button button;
 

@@ -13,8 +13,8 @@
         android:theme="@style/Theme.CRM">
         <activity android:name=".CRMManagement.CRM_RegisterActivity"></activity>
         <activity android:name=".CRMManagement.CRMDashboardActivity" />
-        <activity android:name=".LeaveDetailsActivity" />
-        <activity android:name=".LeaveManagementActivity" />
+        <activity android:name=".LeaveManagement.LeaveDetailsActivity" />
+        <activity android:name=".LeaveManagement.LeaveManagementActivity" />
         <activity android:name=".EmployeeManagement.DigitalMarketingEmployeeDetailsActivity" />
         <activity android:name=".EmployeeManagement.DevelopmentEmployeeDetailsActivity" />
         <activity android:name=".EmployeeManagement.HRMEmployeeDetailsActivity" />
@@ -40,7 +40,7 @@
         <activity android:name=".HRManagement.TestPaperSummerActivity" />
         <activity android:name=".HRManagement.CandidateMainPage" />
         <activity android:name=".CRMManagement.CustomerDetails" />
-        <activity android:name=".CustomersDetails" />
+        <activity android:name=".CRMManagement.CustomersDetails" />
         <activity android:name=".EmployeeRegistration" />
         <activity android:name=".AttendanceActivity" />
         <activity android:name=".CustomerRegisteration" />

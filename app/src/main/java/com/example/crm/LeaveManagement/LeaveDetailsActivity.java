@@ -1,8 +1,10 @@
-package com.example.crm;
+package com.example.crm.LeaveManagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.crm.R;
 
 public class LeaveDetailsActivity extends AppCompatActivity {
 

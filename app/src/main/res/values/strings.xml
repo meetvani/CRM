@@ -35,7 +35,11 @@
     </string-array>
 
     <string-array name="Department">
-
+        <item>Select Department</item>
+        <item>Development</item>
+        <item>Sales</item>
+        <item>Digital Marketing</item>
+        <item>HR Management</item>
     </string-array>
 
     <string-array name="Status">

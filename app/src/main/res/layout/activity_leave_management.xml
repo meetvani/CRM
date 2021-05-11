@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeaveManagementActivity"
+    tools:context=".LeaveManagement.LeaveManagementActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,8 +12,37 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue_border">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_backarrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave Management"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/card2"
+            android:id="@+id/accept"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="30dp"
@@ -121,7 +150,7 @@
                     android:layout_marginRight="10dp">
 
                     <Button
-                        android:id="@+id/accept"
+
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:layout_below="@+id/linear"

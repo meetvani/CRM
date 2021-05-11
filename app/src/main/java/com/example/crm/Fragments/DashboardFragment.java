@@ -14,11 +14,9 @@ import com.example.crm.AttendanceActivity;
 import com.example.crm.CRMManagement.CRMDashboardActivity;
 import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
 import com.example.crm.HRManagement.CandidateMainPage;
-import com.example.crm.LeaveManagementActivity;
+import com.example.crm.LeaveManagement.LeaveManagementActivity;
 import com.example.crm.R;
 import com.example.crm.WebmailActivity;
-
-import java.net.Inet4Address;
 
 public class DashboardFragment extends Fragment {
 CardView webmailcard;

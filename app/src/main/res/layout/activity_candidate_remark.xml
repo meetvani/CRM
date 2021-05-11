@@ -426,6 +426,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/edittext_bg"
+                android:entries="@array/Department"
                 android:elevation="6dp"
                 android:hint="Department"
                 android:padding="6dp" />

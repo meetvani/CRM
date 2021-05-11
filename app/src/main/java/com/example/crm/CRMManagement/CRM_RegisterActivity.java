@@ -10,9 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import com.example.crm.CustomerRegisteration;
-import com.example.crm.CustomersDetails;
-import com.example.crm.EmployeeRegistration;
 import com.example.crm.R;
 import com.example.crm.citystate.Cities;
 import com.example.crm.citystate.Rinterface;
