@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CRM">
-        <activity android:name=".CRMManagement.CRM_RegisterActivity"></activity>
+        <activity android:name=".SalesManagement.SalesCustomerDetailsActivity"></activity>
+        <activity android:name=".SalesManagement.UpcomingSalesActivity" />
+        <activity android:name=".SalesManagement.SalesLoginActivity" />
+        <activity android:name=".CRMManagement.CRM_RegisterActivity" />
         <activity android:name=".CRMManagement.CRMDashboardActivity" />
         <activity android:name=".LeaveManagement.LeaveDetailsActivity" />
         <activity android:name=".LeaveManagement.LeaveManagementActivity" />

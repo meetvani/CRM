@@ -1,351 +1,634 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.DashboardFragment">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        >
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/attendance"
-
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/icon_fingerprintsharp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Attendance"
-            android:paddingStart="10dp"
-            android:paddingLeft="10dp" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/employee"
-        android:layout_marginLeft="17dp"
-       android:layout_toRightOf="@id/attendance"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/clarity_employeeline"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Employee"
-           android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/taskmanager"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/employee"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/solid_tasks"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Task Manager"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-    android:layout_width="90dp"
-    android:layout_height="90dp"
-    android:id="@+id/leavemanagement"
-    android:layout_marginTop="15dp"
-    android:layout_below="@id/attendance"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="15dp">
-    <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="25dp"
-        android:src="@drawable/payslip"/>
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:text="Leave Management"
-        android:textSize="12sp"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
-</androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/candidate"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/leavemanagement"
-        android:layout_below="@id/employee"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/candidate"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Candidate"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/crm"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/candidate"
-        android:layout_below="@id/employee"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/ic_crm"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="CRM"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/invoice"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/leavemanagement"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/fileinvoicedollar"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
-            android:text="Invoices"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/webmail"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/invoice"
-        android:layout_below="@id/candidate"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/imageremovebgpreview1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Webmail"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/departments"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/webmail"
-        android:layout_below="@id/candidate"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/fologo"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Departments"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>\
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/expenses"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/invoice"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/bi_graphup"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
-            android:text="Expenses"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/payslip"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/invoice"
-        android:layout_below="@id/departments"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/payslip"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Payslip"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/support"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@id/webmail"
-        android:layout_below="@id/departments"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/bx_bxsupport"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Support"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/reporting"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/expenses"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="15dp">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="25dp"
-            android:src="@drawable/tabler_report"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
-            android:text="Reporting"
-            android:textAlignment="center"
-            android:gravity="center_horizontal" />
-    </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:id="@+id/interviews"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="17sp"
-            android:layout_below="@id/expenses"
-            android:layout_toRightOf="@+id/reporting"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="15dp">
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="25dp"
-                android:src="@drawable/payslip"/>
-            <TextView
-                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
-                android:text="Interviews"
-                android:textAlignment="center"
-                android:gravity="center_horizontal" />
-        </androidx.cardview.widget.CardView>
-    </RelativeLayout>
-</RelativeLayout>
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendance"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/icon_fingerprintsharp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Registration"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/employee"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_employee_dash"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/taskmanager"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_task_manager"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manage"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/leavemanagement"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_email"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Leave"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/candidate"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/candidate"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Candidate"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crm"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_crm"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CRM"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/invoice"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_invoice"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invoice"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/webmail"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/imageremovebgpreview1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img1"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:text="Webmail"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/departments"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/fologo"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Departments"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/interviews"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_interviews"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Interviews"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/payslip"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/payslip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payslip"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/support"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_mic"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Support"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/reporting"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tabler_report"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reporting"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/expences"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="8dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_graph"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:layout_below="@id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expenses"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>

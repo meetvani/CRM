@@ -16,12 +16,13 @@ import com.example.crm.EmployeeManagement.EmployeeDashboardActivity;
 import com.example.crm.HRManagement.CandidateMainPage;
 import com.example.crm.LeaveManagement.LeaveManagementActivity;
 import com.example.crm.R;
+import com.example.crm.SalesManagement.SalesLoginActivity;
 import com.example.crm.WebmailActivity;
 
 public class DashboardFragment extends Fragment {
 CardView webmailcard;
 
-    CardView employee_cardView, leave_card, crm_card, candidate_card;
+    CardView employee_cardView, leave_card, crm_card, candidate_card, sales;
     CardView cardView,attendancecard;
 
     @Override
@@ -37,6 +38,9 @@ CardView webmailcard;
         leave_card = v.findViewById(R.id.leavemanagement);
         crm_card = v.findViewById(R.id.crm);
         candidate_card = v.findViewById(R.id.candidate);
+        sales = v.findViewById(R.id.invoice);
+
+        sales.setOnClickListener(v15 -> startActivity(new Intent(getContext(), SalesLoginActivity.class)));
 
         crm_card.setOnClickListener(v13 -> startActivity(new Intent(getContext(), CRMDashboardActivity.class)));
 

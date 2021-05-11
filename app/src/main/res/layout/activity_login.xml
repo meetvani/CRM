@@ -8,55 +8,83 @@
     android:orientation="vertical"
     android:background="@color/ayushBlue">
 
-   <de.hdodenhof.circleimageview.CircleImageView
-       android:id="@+id/user_image"
-       android:layout_width="166dp"
-       android:layout_height="166dp"
-       android:layout_centerHorizontal="true"
-       android:elevation="15dp"
-       android:layout_marginTop="145dp"
-       android:layout_marginBottom="20dp"
-       android:src="@drawable/logo"
-       tools:ignore="MissingClass" />
-   <EditText
-       android:layout_width="match_parent"
-       android:layout_height="35dp"
-       android:layout_below="@id/user_image"
-       android:layout_margin="25dp"
-       android:id="@+id/login_empid"
-       android:hint="Employee Id"
-       android:background="@drawable/edback"
-       android:textAlignment="center"
-       android:gravity="center_horizontal"
-       android:layout_gravity="center_horizontal" />
-
-   <EditText
-       android:layout_width="match_parent"
-       android:layout_height="35dp"
-       android:layout_below="@id/login_empid"
-       android:layout_margin="25dp"
-       android:id="@+id/login_emppass"
-       android:hint="Password"
-       android:background="@drawable/edback"
-       android:textAlignment="center"
-       android:gravity="center_horizontal"
-       android:layout_gravity="center_horizontal" />
-
-   <Button
+   <RelativeLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:id="@+id/login_button"
-       android:text="Login"
-       android:layout_below="@id/login_emppass"
-       android:layout_margin="25dp"/>
+       android:layout_centerInParent="true">
 
 
-   <TextView
-       android:layout_width="116dp"
-       android:layout_height="wrap_content"
-       android:layout_below="@id/login_button"
-       android:text="Forgot Password?"
-       android:layout_centerHorizontal="true"
-       android:textColor="@color/white"/>
+      <ImageView
+          android:id="@+id/logo"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/logo" />
+
+      <EditText
+          android:id="@+id/employee_id"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Name / Employee Id"
+          android:layout_below="@id/logo"
+          android:layout_marginTop="40dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edback"
+          android:padding="13dp"/>
+
+      <EditText
+          android:id="@+id/mobile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Mobile No"
+          android:layout_below="@id/employee_id"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edback"
+          android:padding="13dp"/>
+
+      <EditText
+          android:id="@+id/password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Password"
+          android:layout_below="@id/mobile"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edback"
+          android:padding="13dp"/>
+
+      <Button
+          android:id="@+id/login_button"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:hint="Login"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@id/password"
+          android:layout_marginTop="40dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:background="@drawable/edback"
+          app:backgroundTint="@color/white"
+          android:textColorHint="@color/blue_border"/>
+
+      <TextView
+          android:id="@+id/forgot_password"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Forgot Password ?"
+          android:layout_below="@id/login_button"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_centerHorizontal="true"
+          android:textColor="@color/white"/>
+
+
+
+   </RelativeLayout>
 
 </RelativeLayout>
