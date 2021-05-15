@@ -20,6 +20,6 @@ public class SalesLoginActivity extends AppCompatActivity {
 
         login = findViewById(R.id.login);
 
-        login.setOnClickListener(v -> startActivity(new Intent(SalesLoginActivity.this, SalesCustomerDetailsActivity.class)));
+        login.setOnClickListener(v -> startActivity(new Intent(SalesLoginActivity.this, SalesMainActivity.class)));
     }
 }

@@ -45,7 +45,7 @@ public class CandidateMainPage extends AppCompatActivity {
         });
 
         onlinetest.setOnClickListener(v -> {
-            Intent intent = new Intent(CandidateMainPage.this, TestPaperActivity.class);
+            Intent intent = new Intent(CandidateMainPage.this, TestPaperRespondActivity.class);
             startActivity(intent);
         });
     }

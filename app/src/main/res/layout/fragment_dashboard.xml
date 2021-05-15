@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragments.DashboardFragment">
+    tools:context=".Fragments.DashboardFragment"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
             <LinearLayout
                 android:id="@+id/linear"
@@ -46,7 +48,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Registration"
+                            android:text="Attendence"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:layout_centerHorizontal="true"
@@ -88,7 +90,7 @@
                             android:layout_below="@id/img1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Manage"
+                            android:text="Employee"
                             android:textSize="12sp"
                             android:layout_marginTop="5dp"
                             android:textColor="@color/black"
